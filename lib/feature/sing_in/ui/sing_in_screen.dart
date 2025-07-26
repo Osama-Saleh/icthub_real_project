@@ -62,6 +62,7 @@ class _SingInScreenState extends State<SingInScreen> {
                             controller: emailController,
                             labelText: "Email",
                             hintText: 'Enter your email',
+                            color: Colors.white,
                             prefixIcon: Icon(
                               Icons.email,
                               color: Colors.white,
@@ -73,6 +74,7 @@ class _SingInScreenState extends State<SingInScreen> {
                             height: 20,
                           ),
                           CustomTextFormFiled(
+                            color: Colors.white,
                             controller: passController,
                             labelText: 'Password',
                             hintText: 'Enter your password',

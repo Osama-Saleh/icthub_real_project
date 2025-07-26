@@ -9,6 +9,7 @@ class CustomTextFormFiled extends StatelessWidget {
   final TextInputType? keyboardType;
   final bool? obscureText;
   final String? Function(String?)? validator;
+  final Color color;
   const CustomTextFormFiled({
     super.key,
     required this.controller,
@@ -19,6 +20,7 @@ class CustomTextFormFiled extends StatelessWidget {
     this.keyboardType,
     this.obscureText,
     this.validator,
+    required this.color,
   });
 
   @override
@@ -28,27 +30,27 @@ class CustomTextFormFiled extends StatelessWidget {
       keyboardType: keyboardType ?? TextInputType.emailAddress,
       obscureText: obscureText ?? false,
       style: TextStyle(
-        color: Colors.white,
+        color: color,
       ),
       validator: validator,
       decoration: InputDecoration(
         labelText: labelText ?? '',
         labelStyle: TextStyle(
-          color: Colors.white,
+          color: color,
         ),
         hintText: hintText ?? 'Type.....',
         hintStyle: TextStyle(
-          color: Colors.white,
+          color: color,
         ),
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: color),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: color),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),

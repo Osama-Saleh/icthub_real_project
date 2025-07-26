@@ -57,6 +57,7 @@ class _SingUpScreenState extends State<SingUpScreen> {
                             height: 20,
                           ),
                           CustomTextFormFiled(
+                            color: Colors.white,
                             controller: emailController,
                             labelText: "Email",
                             hintText: 'Enter your email',
@@ -70,6 +71,7 @@ class _SingUpScreenState extends State<SingUpScreen> {
                             height: 20,
                           ),
                           CustomTextFormFiled(
+                            color: Colors.white,
                             controller: passController,
                             labelText: 'Password',
                             hintText: 'Enter your password',
